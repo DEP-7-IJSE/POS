@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="contextOfDashBoard" prefHeight="229.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.pos.controller.DashBoardFormController">
+   <children>
+      <Label alignment="CENTER" layoutX="-1.0" layoutY="1.0" prefHeight="45.0" prefWidth="600.0" text="POS System">
+         <font>
+            <Font name="System Bold" size="30.0" />
+         </font>
+      </Label>
+      <Separator layoutX="8.0" layoutY="49.0" prefHeight="2.0" prefWidth="584.0" />
+      <Label layoutX="2.0" layoutY="210.0" text="Developed By: DEP-7">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="525.0" layoutY="210.0" text="Version 1.0.0">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="137.0" fitWidth="130.0" layoutX="5.0" layoutY="64.0" onMouseClicked="#openCustomerForm" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../asserts/Customer%20Image.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <ImageView fitHeight="137.0" fitWidth="130.0" layoutX="158.0" layoutY="56.0" onMouseClicked="#openItemForm" pickOnBounds="true">
+         <image>
+            <Image url="@../asserts/Items.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <ImageView fitHeight="137.0" fitWidth="130.0" layoutX="313.0" layoutY="64.0" onMouseClicked="#openOrderForm" pickOnBounds="true">
+         <image>
+            <Image url="@../asserts/Order%20Image.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <ImageView fitHeight="137.0" fitWidth="130.0" layoutX="456.0" layoutY="64.0" onMouseClicked="#openOrderListForm" pickOnBounds="true">
+         <image>
+            <Image url="@../asserts/Order%20Details%20Image.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+   </children>
+</AnchorPane>
